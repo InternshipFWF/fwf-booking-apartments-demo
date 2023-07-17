@@ -1,0 +1,117 @@
+{
+  "name": "fwf-booking-apartments-demo",
+  "projectId": "5e1397b3-a700-4b30-9b61-3a6f2308aa48",
+  "description": "The robot opens browser on Booking.com website and searches for apartments to rent. It then extracts all the apartments found from the first page and adds a column at the end of the table. After that, it checks if the price of the apartment exceeds a specific threshold. Based on this rule it updates the table with different messages on last column. At the end it writes the output report.",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.21.0-preview]",
+    "UiPath.System.Activities": "[23.6.0-preview]",
+    "UiPath.Testing.Activities": "[23.6.0-preview]",
+    "UiPath.UIAutomation.Activities": "[23.6.1-preview]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "23.6.1.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "d4f34535-e556-46a7-9383-f07519d792bd",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\UnitTest_Booking_NavigateToWebsite.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "9a100136-ad2c-4dae-a077-58e5c0019f70",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\UnitTest_Booking_SearchForCorrectDate.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "09a3121a-b02f-4156-af46-eb025decdb0b",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\UnitTest_Booking_SearchForApartments.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "8ca5c744-b65c-4ba6-91e5-c0ea15a843bf",
+        "testCaseType": "TestCase",
+        "fileName": "ApplicationLayer\\Booking_ExtractApartmentsFound.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "855ee6fe-426c-4a47-9d79-12cf0294c67e",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\UnitTest_Booking_ExtractApartmentsFound.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6a225067-1306-431c-8669-d56bda6605ec",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\UnitTest_FilterApartmentsTable.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "ff990350-6804-4ff1-b6ae-77302806a39a",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\UnitTest_UpdateTableBasedOnPrice.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a7bb406e-21af-47f8-bb89-d7f1ce49c7ed",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\UnitTest_WriteExcelFile.xaml"
+      }
+    ],
+    "modernBehavior": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "83c1cc2c-bf03-43a2-a679-e62c5c4c0435",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}
